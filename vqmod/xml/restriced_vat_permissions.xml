@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+
+    <file name="admin/controller/localisation/tax_rate.php">
+        <operation  info="restrict vat or any tax add">
+            <search position="after"><![CDATA[
+            public function add() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to add any new tax');
+			$this->response->redirect($this->url->link('localisation/tax_rate', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+        <operation  info="restrict vat delete">
+            <search position="after"><![CDATA[
+            public function delete() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to delete tax');
+			$this->response->redirect($this->url->link('localisation/tax_rate', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+        <operation  info="restrict vat update">
+            <search position="after"><![CDATA[
+            protected function validateForm() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to update tax');
+			$this->response->redirect($this->url->link('localisation/tax_rate', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+	</file>
+    <file name="admin/view/template/localisation/tax_rate_form.twig">
+        <operation  info="restrict vat update">
+            <search position="replace"><![CDATA[
+            <button type="submit" form="form-tax-rate" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+            ]]></search>
+            <add><![CDATA[
+			<button type="submit" form="form-tax-rate" data-toggle="tooltip" title="" class="btn btn-primary" data-original-title="Save" style="display: none;"><i class="fa fa-save"></i></button>
+            ]]></add>
+        </operation>
+    </file>
+</modification>

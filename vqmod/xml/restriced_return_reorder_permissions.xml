@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+	
+	<file name="catalog/view/theme/journal2/template/account/order_info.twig">
+        <operation  info="restrict return and reorder">
+            <search position="replace"><![CDATA[
+             <td class="text-right" style="white-space: nowrap;">{% if product.reorder %} <a href="{{ product.reorder }}" data-toggle="tooltip" title="{{ button_reorder }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i></a> {% endif %} <a href="{{ product.return }}" data-toggle="tooltip" title="{{ button_return }}" class="btn btn-danger"><i class="fa fa-reply"></i></a></td>
+            ]]></search>
+            <add><![CDATA[]]></add>
+        </operation>
+		<operation info="restrict return and reorder design change">
+			<search position="replace"><![CDATA[
+             <td style="width: 20px;"></td>
+            ]]></search>
+            <add><![CDATA[]]></add>
+		</operation>
+		<operation info="restrict return and reorder design change">
+			<search position="replace"><![CDATA[
+             <td></td>
+            ]]></search>
+            <add><![CDATA[]]></add>
+		</operation>
+	</file>
+</modification>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+    
+    <file name="catalog/view/theme/journal2/css/side-column.css">
+        <operation  info="change category list to scroller">
+            <search position="replace" offset="1"><![CDATA[
+            .side-column .box-category {
+            ]]></search>
+            <add><![CDATA[
+            .side-column .box-category {
+            height: 400px;
+			overflow: scroll;
+            ]]></add>
+        </operation>
+	</file>
+    <!--<file name="catalog/view/theme/journal2/css/side-column.css">
+        <operation  info="adding scroller in side category">
+            <search position="replace" offset="1"><![CDATA[
+            .side-column .box-category {
+            ]]></search>
+            <add><![CDATA[
+			.side-column .box-category {
+				overflow: scroll;
+				height: 400px;
+            ]]></add>
+        </operation>
+	</file>-->
+    
+</modification>

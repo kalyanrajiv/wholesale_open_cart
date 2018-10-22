@@ -1,0 +1,13 @@
+---------- Date: 2018-09-27 08:20:08 ~ IP : 122.173.11.53 ----------
+REQUEST URI : /admin/index.php?route=catalog/manufacturer/edit&user_token=H8TPYtPtrRo9k1U44hSVbi569wgVtdme&manufacturer_id=1&page=3
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

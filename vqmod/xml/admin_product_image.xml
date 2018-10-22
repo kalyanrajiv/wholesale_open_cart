@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+ <file name="admin/controller/catalog/product.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize('no_image.png', 40, 40);
+		     ]]></search>
+            <add><![CDATA[
+				$image =  "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/thumb_'.$result['image'] ;
+            ]]></add>
+			
+        </operation>
+		<operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				 $data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+            ]]></search>
+            <add><![CDATA[
+				 $data['thumb']  = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/thumb_'.$product_info['image'] ;
+            ]]></add>
+        </operation>
+		 
+		 <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				 $data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+            ]]></search>
+            <add><![CDATA[
+				  $data['placeholder'] =  "http://hifiprofile.net/thumb_no-image.png"  ;
+            ]]></add>
+        </operation>
+		
+	</file>
+			 
+</modification>

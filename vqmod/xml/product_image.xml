@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+
+    <file name="catalog/controller/product/category.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+             $image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+            ]]></search>
+            <add><![CDATA[
+				$image = "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image'];
+            ]]></add>
+        </operation>
+		<operation  info="no image">
+            <search position="replace"><![CDATA[
+             $image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+            ]]></search>
+            <add><![CDATA[
+				$image = "http://hifiprofile.net/thumb_no-image.png";
+            ]]></add>
+        </operation>
+		
+	</file>
+	
+	 
+	 
+	 
+    <file name="/catalog/controller/checkout/cart.php">
+        <operation  info="modification in manufacturer model">
+				<search position="replace"><![CDATA[
+					$image = $this->model_tool_image->resize($product['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_cart_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_cart_height'));
+				]]></search>
+				 <add><![CDATA[
+				 if(empty($product['image'])){
+				    $image = "http://hifiprofile.net/thumb_no-image.png";
+				}else{
+				$image = 		"http://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
+				}
+			 
+				 
+				]]></add>
+			</operation>
+		
+	</file>
+	
+	
+    <file name="catalog/controller/product/special.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+			]]></search>
+            <add><![CDATA[
+				$image =    "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
+			]]></add>
+        </operation>
+		
+		 <operation  info="no image">
+				<search position="replace"><![CDATA[
+					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+				]]></search>
+				 <add><![CDATA[
+					$image = "http://hifiprofile.net/thumb_no-image.png";
+				 
+				]]></add>
+			</operation>
+	</file>
+	
+	
+	<file name="catalog/controller/product/manufacturer.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				 $image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+			]]></search>
+            <add><![CDATA[
+			  $image =    "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
+			 
+				 
+			]]></add>
+        </operation>
+		 <operation  info="no image">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+			]]></search>
+            <add><![CDATA[
+			  $image =  "http://hifiprofile.net/thumb_no-image.png"  ;
+			]]></add>
+        </operation>
+		
+	</file>
+	<file name="catalog/controller/account/wishlist.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_wishlist_height'));
+			]]></search>
+            <add><![CDATA[
+				$image =    "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+			]]></add>
+        </operation>
+		
+		 <operation  info="no image">
+				<search position="replace"><![CDATA[
+					$image = false;
+				]]></search>
+				 <add><![CDATA[
+					$image = "http://hifiprofile.net/thumb_no-image.png";
+				 
+				]]></add>
+			</operation>
+	</file>
+	 
+	<file name="catalog/controller/product/compare.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_compare_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_compare_height'));
+			]]></search>
+            <add><![CDATA[
+				$image = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+			]]></add>
+        </operation>
+		
+		 <operation  info="no image">
+				<search position="replace"><![CDATA[
+					$image = false;
+				]]></search>
+				 <add><![CDATA[
+					$image = "http://hifiprofile.net/thumb_no-image.png";
+				 
+				]]></add>
+			</operation>
+	</file>
+	
+	<file name="catalog/controller/product/search.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+			]]></search>
+            <add><![CDATA[
+				$image = "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
+			]]></add>
+        </operation>
+		  <operation  info="no image">
+            <search position="replace"><![CDATA[
+			$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+			
+			]]></search>
+            <add><![CDATA[
+				 $image =    "http://hifiprofile.net/thumb_no-image.png"  ;
+			]]></add>
+        </operation>
+		
+		
+	</file>
+	
+	 
+	<file name="catalog/controller/extension/module/featured.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
+			]]></search>
+            <add><![CDATA[
+			$image = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+			]]></add>
+        </operation>
+		
+		<operation  info="no image">
+            <search position="replace"><![CDATA[
+			$image = $this->model_tool_image->resize('placeholder.png', $setting['width'], $setting['height']);
+			]]></search>
+            <add><![CDATA[
+				 $image =    "http://hifiprofile.net/thumb_no-image.png"  ;
+			]]></add>
+        </operation>
+		
+		
+	</file>
+	
+	<file name="catalog/controller/product/product.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+			 $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_thumb_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_thumb_height'));
+			]]></search>
+            <add><![CDATA[
+			
+				$data['thumb'] = "http://hifiprofile.net/files/Products/image/".$product_info['product_id']."/vga_".$product_info['image'];
+			]]></add>
+        </operation>
+		
+		 <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+				$data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_height'));
+			]]></search>
+            <add><![CDATA[
+				 $data['popup'] =  "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+			]]></add>
+        </operation>
+		  <operation  info="no image">
+            <search position="replace"><![CDATA[
+				$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_related_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_related_height'));
+			]]></search>
+            <add><![CDATA[
+				$image =  "http://hifiprofile.net/thumb_no-image.png"  ;
+			 
+			]]></add>
+        </operation>
+		 <!--   <operation  info="no image">
+            <search position="replace"><![CDATA[
+				$data['thumb'] = '';
+			]]></search>
+            <add><![CDATA[
+				$data['thumb'] =  "http://hifiprofile.net/thumb_no-image.png"  ;
+			 
+			]]></add>
+        </operation> -->
+	</file>
+	 
+</modification>

@@ -1,0 +1,20 @@
+
+<modification>
+         <id>My Vq Mod Title</id>
+         <version>1.4.x and 1.5.x</version>
+         <vqmver>1.0.8</vqmver>
+         <author>You the author</author>     
+         <file name='view/template/customer/customer_form.twig'> 
+      
+         <operation info="Example of the vQmod">
+           <search position="replace"><![CDATA[
+          <label class="col-sm-2 control-label" for="input-firstname">{{ entry_firstname }}</label>  
+           ]]></search>
+           <add><![CDATA[
+           I am replaced content!!
+           ]]></add>
+       </operation>
+                      
+          </file>    
+             
+</modification>

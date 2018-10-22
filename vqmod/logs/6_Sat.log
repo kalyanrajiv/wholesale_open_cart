@@ -1,0 +1,532 @@
+---------- Date: 2018-08-18 05:33:11 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /index.php?route=account/order/info&order_id=7
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 05:34:50 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /index.php?route=account/order/info&order_id=7
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 05:36:14 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /index.php?route=account/order/info&order_id=7
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 05:38:24 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /index.php?route=account/order/info&order_id=7
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 05:57:32 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/restriced_admin_side_order_edit_delete.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and above
+   vqmver    : 2.6.0
+   author    : vqmod.com
+
+File Name    : admin/view/template/sale/order_list.twig(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="{{ order.edit }}"><i class="fa fa-pencil"></i> {{ button_edit }}</a></li>
+                          <li><a href="{{ order.order_id }}"><i class="fa fa-trash-o"></i> {{ button_delete }}</a></li>
+                        </ul>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:00:08 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/restriced_admin_side_order_edit_delete.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and above
+   vqmver    : 2.6.0
+   author    : vqmod.com
+
+File Name    : admin/view/template/sale/order_list.twig(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="{{ order.edit }}"><i class="fa fa-pencil"></i> {{ button_edit }}</a></li>
+                          <li><a href="{{ order.order_id }}"><i class="fa fa-trash-o"></i> {{ button_delete }}</a></li>
+                        </ul>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:00:55 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:05:03 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&order_id=7
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/restriced_admin_side_order_edit_delete.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and above
+   vqmver    : 2.6.0
+   author    : vqmod.com
+
+File Name    : admin/view/template/sale/order_info.twig(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <a href="{{ edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:11:44 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&order_id=7
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/restriced_admin_side_order_edit_delete.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and above
+   vqmver    : 2.6.0
+   author    : vqmod.com
+
+File Name    : admin/view/template/sale/order_info.twig(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <fieldset>
+              <legend>{{ text_history_add }}</legend>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-order-status">{{ entry_order_status }}</label>
+                  <div class="col-sm-10">
+                    <select name="order_status_id" id="input-order-status" class="form-control">
+                      
+                      
+                      {% for order_statuses in order_statuses %}
+                      {% if order_statuses.order_status_id == order_status_id %}
+                      
+                      
+                      <option value="{{ order_statuses.order_status_id }}" selected="selected">{{ order_statuses.name }}</option>
+                      
+                      
+                      {% else %}
+                      
+                      
+                      <option value="{{ order_statuses.order_status_id }}">{{ order_statuses.name }}</option>
+                      
+                      
+                      {% endif %}
+                      {% endfor %}
+                    
+                    
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-override"><span data-toggle="tooltip" title="{{ help_override }}">{{ entry_override }}</span></label>
+                  <div class="col-sm-10">
+                    <div class="checkbox">
+                      <input type="checkbox" name="override" value="1" id="input-override" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-notify">{{ entry_notify }}</label>
+                  <div class="col-sm-10">
+                    <div class="checkbox">
+                      <input type="checkbox" name="notify" value="1" id="input-notify" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-comment">{{ entry_comment }}</label>
+                  <div class="col-sm-10">
+                    <textarea name="comment" rows="8" id="input-comment" class="form-control"></textarea>
+                  </div>
+                </div>
+              </form>
+            </fieldset>
+            <div class="text-right">
+              <button id="button-history" data-loading-text="{{ text_loading }}" class="btn btn-primary"><i class="fa fa-plus-circle"></i> {{ button_history_add }}</button>
+            </div>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:13:54 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&order_id=2
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:15:38 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&order_id=2
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/restriced_admin_side_order_edit_delete.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and above
+   vqmver    : 2.6.0
+   author    : vqmod.com
+
+File Name    : admin/view/template/sale/order_info.twig(1)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <fieldset>
+              <legend>{{ text_history_add }}</legend>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-order-status">{{ entry_order_status }}</label>
+                  <div class="col-sm-10">
+                    <select name="order_status_id" id="input-order-status" class="form-control">
+                      
+                      
+                      {% for order_statuses in order_statuses %}
+                      {% if order_statuses.order_status_id == order_status_id %}
+                      
+                      
+                      <option value="{{ order_statuses.order_status_id }}" selected="selected">{{ order_statuses.name }}</option>
+                      
+                      
+                      {% else %}
+                      
+                      
+                      <option value="{{ order_statuses.order_status_id }}">{{ order_statuses.name }}</option>
+                      
+                      
+                      {% endif %}
+                      {% endfor %}
+                    
+                    
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-override"><span data-toggle="tooltip" title="{{ help_override }}">{{ entry_override }}</span></label>
+                  <div class="col-sm-10">
+                    <div class="checkbox">
+                      <input type="checkbox" name="override" value="1" id="input-override" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-notify">{{ entry_notify }}</label>
+                  <div class="col-sm-10">
+                    <div class="checkbox">
+                      <input type="checkbox" name="notify" value="1" id="input-notify" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="input-comment">{{ entry_comment }}</label>
+                  <div class="col-sm-10">
+                    <textarea name="comment" rows="8" id="input-comment" class="form-control"></textarea>
+                  </div>
+                </div>
+              </form>
+            </fieldset>
+            <div class="text-right">
+              <button id="button-history" data-loading-text="{{ text_loading }}" class="btn btn-primary"><i class="fa fa-plus-circle"></i> {{ button_history_add }}</button>
+            </div>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:18:33 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&order_id=2
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:21:48 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&order_id=7
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:25:12 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order/info&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&order_id=2
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:27:16 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:36:59 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /index.php?route=common/home
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:43:09 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC&qt1m4dc=1
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 06:44:07 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=sale/order&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:24:40 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:25:27 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:26:00 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:28:57 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:30:13 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:31:06 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:31:44 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:32:23 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:32:57 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-08-18 07:34:16 ~ IP : 27.255.236.216 ----------
+REQUEST URI : /admin/index.php?route=catalog/product/add&user_token=bXCRdiXknfJMD8LNn6rkg2664ibRzpjC
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hpsale.co.uk/opencart.hpsale.co.uk/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

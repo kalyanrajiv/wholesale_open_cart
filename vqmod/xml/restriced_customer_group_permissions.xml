@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+
+    <file name="admin/controller/customer/customer_group.php">
+        <operation  info="restrict customer group add">
+            <search position="after"><![CDATA[
+            public function add() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to add customer group');
+			$this->response->redirect($this->url->link('customer/customer_group', 'user_token=' . $this->session->data['user_token'] . $url, true));die;
+            ]]></add>
+        </operation>
+		<operation  info="restrict customer group update">
+            <search position="after"><![CDATA[
+            protected function validateForm() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to update customer group');
+			$this->response->redirect($this->url->link('customer/customer_group', 'user_token=' . $this->session->data['user_token'] . $url, true));die;
+            ]]></add>
+        </operation>
+		<operation  info="restrict customer group delete">
+            <search position="after"><![CDATA[
+            public function delete() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to delete customer group');
+			$this->response->redirect($this->url->link('customer/customer_group', 'user_token=' . $this->session->data['user_token'] . $url, true));die;
+            ]]></add>
+        </operation>
+	</file>
+	<file name="admin/view/template/customer/customer_group_form.twig">
+        <operation  info="restrict customer group update">
+            <search position="replace"><![CDATA[
+            <button type="submit" form="form-customer-group" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+            ]]></search>
+            <add><![CDATA[
+			<button type="submit" form="form-customer-group" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" style="display: none;"><i class="fa fa-save"></i></button>
+            ]]></add>
+        </operation>
+	</file>
+</modification>

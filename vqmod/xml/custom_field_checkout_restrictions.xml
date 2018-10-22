@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+
+    <file name="catalog/model/journal2/checkout.php">
+        <operation  info="restrict custom field on checkout screen">
+            <search position="after"><![CDATA[
+            $custom_fields = $this->model_account_custom_field->getCustomFields($this->getCustomerGroupId());
+            ]]></search>
+            <add><![CDATA[
+            unset($custom_fields['1']);
+            unset($custom_fields['2']);
+            unset($custom_fields['3']);
+            unset($custom_fields['4']);
+            unset($custom_fields['5']);
+            unset($custom_fields['6']);
+            unset($custom_fields['7']);
+            ]]></add>
+        </operation>
+	</file>
+</modification>

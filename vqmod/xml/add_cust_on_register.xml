@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+
+    <file name="catalog/controller/account/register.php">
+        <operation  info="add customer on register">
+            <search position="after"><![CDATA[
+            $customer_id = $this->model_account_customer->addCustomer($this->request->post);
+            ]]></search>
+            <add><![CDATA[
+            $conn = mysqli_connect("localhost","hifiprofile_oc","HiFiProfile@2018","hifiprofile_oc");
+			if (!mysqli_connect_errno()){
+				$custDataQry = "SELECT * FROM `oc_customer` WHERE `customer_id`=$customer_id";
+				$custData = mysqli_query($conn,$custDataQry);
+				if (mysqli_num_rows($custData) > 0) {
+					while($row = mysqli_fetch_assoc($custData)) {
+						$customFields = json_decode($row['custom_field']);
+                        $agents = array("1"=>$customFields->{1});
+                        $customField = json_encode($agents);
+						$firstname = $row['firstname'];
+						$lastname = $row['lastname'];
+						$company = $customFields->{2};
+						$address1 = $customFields->{3};
+						$address2 = $customFields->{4};
+						$city = $customFields->{5};
+						$postCose = $customFields->{6};
+						$countryId = $customFields->{7};
+						$zoneID = $customFields->{8};
+						$addressQry = "INSERT INTO `oc_address` (`customer_id`,`firstname`,`lastname`,`company`,`address_1`,`address_2`,`city`,`postcode`,`country_id`,`zone_id`) VALUES($customer_id,'$firstname','$lastname','$company','$address1','$address2','$city','$postCose',$countryId,$zoneID)";
+						mysqli_query($conn,$addressQry);
+                        $addressId = mysqli_insert_id($conn);
+                        $updateCust = "UPDATE `oc_customer` SET `custom_field`='$customField',`address_id`=$addressId WHERE `customer_id`=$customer_id";
+                        mysqli_query($conn,$updateCust);
+					}
+				}
+			}
+            $email = $this->request->post['email'];
+            $to = "sales@hifiprofile.net";
+			//$to = "yamini.proavid@gmail.com";
+			$subject = "New User Register";
+			$headers = "MIME-Version: 1.0" . "\r\n";
+			$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+			$headers .= 'From: <webmaster@example.com>' . "\r\n";
+			$message = "New user (Email: $email) just registered on opencart site. Please review!";
+			mail($to,$subject,$message,$headers);
+            ]]></add>
+        </operation>
+	</file>
+	<file name="catalog/controller/journal2/checkout.php">
+        <operation  info="add customer on register">
+            <search position="after"><![CDATA[
+            $customer_id = $this->model_account_customer->addCustomer($data);
+            ]]></search>
+            <add><![CDATA[
+            $email = $this->request->post['email'];
+            $to = "sales@hifiprofile.net";
+			//$to = "yamini.proavid@gmail.com";
+			$subject = "New User Register";
+			$headers = "MIME-Version: 1.0" . "\r\n";
+			$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+			$headers .= 'From: <webmaster@example.com>' . "\r\n";
+			$message = "New user (Email: $email) just registered on opencart site. Please review!";
+			mail($to,$subject,$message,$headers);
+            ]]></add>
+        </operation>
+	</file>
+</modification>

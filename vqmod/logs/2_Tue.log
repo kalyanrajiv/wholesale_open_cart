@@ -1,0 +1,53 @@
+---------- Date: 2018-09-18 07:13:44 ~ IP : 210.56.104.128 ----------
+REQUEST URI : /admin/index.php?route=localisation/tax_rate/edit&user_token=Ky4NDDrhCdAVhaVnl7Pn183RoT7QajbI&tax_rate_id=86
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/restriced_vat_permissions.xml
+   id        : VQMOD CORE FOR OPENCART - DO NOT REMOVE
+   version   : 1.4.x and above
+   vqmver    : 2.6.0
+   author    : vqmod.com
+
+File Name    : admin/view/template/localisation/tax_rate_form.twig(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <button type="submit" form="form-tax-rate" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-09-18 07:15:16 ~ IP : 210.56.104.128 ----------
+REQUEST URI : /admin/index.php?route=localisation/tax_rate/edit&user_token=Ky4NDDrhCdAVhaVnl7Pn183RoT7QajbI&tax_rate_id=86
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-09-18 07:16:54 ~ IP : 210.56.104.128 ----------
+REQUEST URI : /admin/index.php?route=localisation/tax_rate/edit&user_token=Ky4NDDrhCdAVhaVnl7Pn183RoT7QajbI&tax_rate_id=86
+VQMod::_getMods - NO XML FILES READABLE IN XML FOLDER
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-09-18 07:16:54 ~ IP : 210.56.104.128 ----------
+REQUEST URI : /admin/index.php?route=localisation/tax_rate&user_token=Ky4NDDrhCdAVhaVnl7Pn183RoT7QajbI
+VQMod::_getMods - NO XML FILES READABLE IN XML FOLDER
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-09-18 07:17:20 ~ IP : 210.56.104.128 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&user_token=Ky4NDDrhCdAVhaVnl7Pn183RoT7QajbI
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

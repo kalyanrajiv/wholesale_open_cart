@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+
+    <file name="admin/controller/customer/custom_field.php">
+        <operation  info="restrict custom field add">
+            <search position="after"><![CDATA[
+            public function add() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to add custom field');
+			$this->response->redirect($this->url->link('customer/custom_field', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+		<operation  info="restrict custom field update">
+            <search position="after"><![CDATA[
+            protected function validateForm() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to update custom field');
+			$this->response->redirect($this->url->link('customer/custom_field', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+		<operation  info="restrict custom field delete">
+            <search position="after"><![CDATA[
+            public function delete() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to delete custom field');
+			$this->response->redirect($this->url->link('customer/custom_field', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+	</file>
+	<file name="admin/view/template/customer/custom_field_form.twig">
+        <operation  info="restrict custom field update">
+            <search position="replace"><![CDATA[
+            <button type="submit" form="form-custom-field" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+            ]]></search>
+            <add><![CDATA[
+			<button type="submit" form="form-custom-field" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary" style="display: none"><i class="fa fa-save"></i></button>
+            ]]></add>
+        </operation>
+        <operation  info="restrict custom field attribute add">
+            <search position="after" offset="1"><![CDATA[
+            <tfoot>
+            ]]></search>
+            <add><![CDATA[
+			<tfoot>
+                  <tr style="display: none;">
+            ]]></add>
+        </operation>
+	</file>
+</modification>

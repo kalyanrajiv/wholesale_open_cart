@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+	
+	<file name="catalog/language/en-gb/extension/payment/cod.php">
+        <operation  info="restrict product add">
+            <search position="replace"><![CDATA[
+            Cash On Delivery
+            ]]></search>
+            <add><![CDATA[
+            Performa
+            ]]></add>
+        </operation>
+	</file>
+	
+    <!--<file name="catalog/model/checkout/order.php">
+        <operation  info="restrict product add">
+            <search position="after"><![CDATA[
+            foreach ($order_products as $order_product) {
+            ]]></search>
+            <add><![CDATA[
+            if($order_info['payment_code'] == 'cod'){
+                $order_product['quantity'] = 0;	
+            }
+            ]]></add>
+        </operation>
+	</file>-->
+	
+    <!--<file name="catalog/view/theme/default/template/checkout/checkout.twig">
+        <operation  info="restrict product add">
+            <search position="replace" offset="46"><![CDATA[
+            $(document).delegate('#button-shipping-method', 'click', function() {
+            ]]></search>
+            <add><![CDATA[
+            $(document).delegate('#button-shipping-method', 'click', function() {
+				$.ajax({
+					url: 'index.php?route=checkout/shipping_method/save',
+					type: 'post',
+					data: $('#collapse-shipping-method input[type=\'radio\']:checked, #collapse-shipping-method textarea'),
+					dataType: 'json',
+					beforeSend: function() {
+						$('#button-shipping-method').button('loading');
+					},
+					success: function(json) {
+						$('.alert-dismissible, .text-danger').remove();
+			
+						if (json['redirect']) {
+							location = json['redirect'];
+						} else if (json['error']) {
+							$('#button-shipping-method').button('reset');
+			
+							if (json['error']['warning']) {
+								$('#collapse-shipping-method .panel-body').prepend('<div class="alert alert-danger alert-dismissible">' + json['error']['warning'] + '<button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+							}
+						} else {
+							$.ajax({
+								url: 'index.php?route=checkout/payment_method',
+								dataType: 'html',
+								complete: function() {
+									$('#button-shipping-method').button('reset');
+								},
+								success: function(html) {
+									$('#collapse-payment-method .panel-body').html(html);
+			
+									$('#collapse-payment-method').parent().find('.panel-heading .panel-title').html('<a href="#collapse-payment-method" data-toggle="collapse" data-parent="#accordion" class="accordion-toggle">{{ text_checkout_payment_method }} <i class="fa fa-caret-down"></i></a>');
+			
+									$('a[href=\'#collapse-payment-method\']').trigger('click');
+			
+									$('#collapse-checkout-confirm').parent().find('.panel-heading .panel-title').html('{{ text_checkout_confirm }}');
+								},
+								error: function(xhr, ajaxOptions, thrownError) {
+									alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+								}
+							});
+						}
+					},
+					error: function(xhr, ajaxOptions, thrownError) {
+						alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+					}
+				});
+				var performa = confirm('Do You Want To Create Performa?');
+				if(performa == true){
+					//$("input[name=payment_method]").hide();
+					//$("label").hide();
+					//jQuery("label:contains('Performa')").show();
+					//jQuery("input[value=cod]").show();
+					//jQuery("input[value=cod]").attr('checked', true);
+				}else{
+					//jQuery("label:contains('Performa')").hide();
+					//jQuery("input[value=cod]").hide();
+				}
+			});
+            ]]></add>
+        </operation>
+	</file>-->
+</modification>

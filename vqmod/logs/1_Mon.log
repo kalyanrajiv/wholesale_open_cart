@@ -1,0 +1,52 @@
+---------- Date: 2018-10-22 05:50:29 ~ IP : 27.255.240.123 ----------
+REQUEST URI : /index.php?route=product/category&path=104
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-10-22 07:23:03 ~ IP : 27.255.240.123 ----------
+REQUEST URI : /admin/index.php?route=catalog/category/edit&user_token=rocR1thOsyqF2wlerq1wh958O1RAyfHe&category_id=36&page=2
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-10-22 07:23:33 ~ IP : 27.255.240.123 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&user_token=rocR1thOsyqF2wlerq1wh958O1RAyfHe
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2018-10-22 07:24:07 ~ IP : 27.255.240.123 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : /var/www/vhosts/hifiprofile.co.uk/httpdocs/vqmod/xml/vqmod_homepage.xml
+   id        : My Vq Mod Title
+   version   : 1.4.x and 1.5.x
+   vqmver    : 1.0.8
+   author    : You the author
+VQModObject::parseMods - Could not resolve path for [view/template/customer/customer_form.twig] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

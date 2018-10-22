@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+
+    <file name="catalog/controller/product/category.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+            $data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_height'));
+            ]]></search>
+            <add><![CDATA[
+				$data['thumb'] = "http://hifiprofile.net/files/Categories/image/".$category_id.'/thumb_'.$category_info['image'];
+            ]]></add>
+        </operation>
+	</file>
+	
+	<file name="admin/controller/catalog/category.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace" offset="1"><![CDATA[
+            } elseif (!empty($category_info) && is_file(DIR_IMAGE . $category_info['image'])) {
+            ]]></search>
+            <add><![CDATA[
+				} elseif (!empty($category_info)) {
+				$data['thumb'] = 'http://hifiprofile.net/files/Categories/image/'.$category_info['category_id'].'/thumb_'.$category_info['image'];
+            ]]></add>
+        </operation>
+	</file>
+	
+	<!--<file name="admin/controller/catalog/category.php">
+        <operation  info="modification in manufacturer model">
+            <search position="replace"><![CDATA[
+            $data['thumb'] = $this->model_tool_image->resize($category_info['image'], 100, 100);
+            ]]></search>
+            <add><![CDATA[
+				$data['thumb'] = 'http://hifiprofile.net/files/Categories/image/'.$category_info['category_id'].'/'.$category_info['image'];
+            ]]></add>
+        </operation>
+	</file>-->
+	
+	<!--<file name="catalog/view/theme/journal2/css/side-column.css">
+        <operation  info="adding scroller in side category">
+            <search position="replace" offset="1"><![CDATA[
+            .side-column .box-category {
+            ]]></search>
+            <add><![CDATA[
+			.side-column .box-category {
+				overflow: scroll;
+				height: 400px;
+            ]]></add>
+        </operation>
+	</file>-->
+	
+</modification>

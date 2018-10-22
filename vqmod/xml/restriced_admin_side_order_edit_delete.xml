@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+    <version>1.4.x and above</version>
+    <vqmver required="true">2.6.0</vqmver>
+    <author>vqmod.com</author>
+	
+	<file name="admin/view/template/sale/order_list.twig">
+        <operation  info="restrict edit and delete order">
+            <search position="replace"><![CDATA[
+             <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>
+            ]]></search>
+            <add><![CDATA[]]></add>
+        </operation>
+	</file>
+    <file name="admin/view/template/sale/order_info.twig">
+        <operation  info="restrict edit and delete order">
+            <search position="replace"><![CDATA[
+             <a href="{{ edit }}" data-toggle="tooltip" title="{{ button_edit }}" class="btn btn-primary"><i class="fa fa-pencil"></i></a>
+            ]]></search>
+            <add><![CDATA[]]></add>
+        </operation>
+        
+        <operation  info="remove history div on order view">
+            <search position="replace" offset="55"><![CDATA[
+             <fieldset>
+            ]]></search>
+            <add><![CDATA[]]></add>
+        </operation>
+	</file>
+    <file name="admin/controller/sale/order.php">
+		<operation  info="restrict order add">
+            <search position="after"><![CDATA[
+            public function add() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to add order');
+			$this->response->redirect($this->url->link('sale/order', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+        <operation  info="restrict order edit">
+            <search position="after"><![CDATA[
+            public function edit() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to edit order');
+			$this->response->redirect($this->url->link('sale/order', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+        <operation  info="restrict order delete">
+            <search position="after"><![CDATA[
+            public function delete() {
+            ]]></search>
+            <add><![CDATA[
+            $this->session->data['success'] = $this->language->get('You do not have permissions to delete order');
+			$this->response->redirect($this->url->link('sale/order', 'user_token=' . $this->session->data['user_token'] , true));die;
+            ]]></add>
+        </operation>
+    </file>
+    <file name="/catalog/controller/api/order.php">
+        <operation  info="remove history div on order view">
+            <search position="replace"><![CDATA[
+             $this->model_checkout_order->deleteOrder($order_id);
+            ]]></search>
+            <add><![CDATA[]]></add>
+        </operation>
+    </file>
+</modification>
