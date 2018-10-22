@@ -1,5 +1,5 @@
 <?php
-    include("includes/config.php");
+    include("includes/config.php"); 
     if (!mysqli_connect_errno()){
         $query = "SELECT * FROM `customers`";
         $result = mysqli_query($hpcon,$query);//echo'<pre>';print_r($result);die;
