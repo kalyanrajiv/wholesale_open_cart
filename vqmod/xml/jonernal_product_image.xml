@@ -1,198 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modification>
-    <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
-    <version>1.4.x and above</version>
-    <vqmver required="true">2.6.0</vqmver>
-    <author>vqmod.com</author>
+  <id>VQMOD CORE FOR OPENCART - DO NOT REMOVE</id>
+  <version>1.4.x and above</version>
+  <vqmver required="true">2.6.0</vqmver>
+  <author>vqmod.com</author>
  
-    <file name="catalog/controller/journal2/quickview.php">
-        <operation  info="modification in manufacturer model">
-            <search position="replace"><![CDATA[
-				$data['popup_fixed'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
-            ]]></search>
-            <add><![CDATA[
-				$data['popup_fixed'] = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
-            ]]></add>
-        </operation>
+  <file name="catalog/controller/journal2/quickview.php">
+      <operation  info="modification in manufacturer model">
+          <search position="replace"><![CDATA[
+            $data['popup_fixed'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
+          ]]></search>
+          <add><![CDATA[
+            $data['popup_fixed'] = "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
+          ]]></add>
+      </operation>
 		
-		<operation  info="no image">
-            <search position="replace"><![CDATA[
-            $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
-            ]]></search>
-            <add><![CDATA[
-				$data['popup'] = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
-            ]]></add>
-        </operation>
+      <operation  info="no image">
+        <search position="replace"><![CDATA[
+          $data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'));
+        ]]></search>
+        <add><![CDATA[
+          $data['popup'] = "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
+        ]]></add>
+      </operation>
 		
-		<operation  info="modification in manufacturer model">
-            <search position="replace"><![CDATA[
-				 $data['thumb_fixed'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'));
-				  ]]></search>
-            <add><![CDATA[
-				$data['thumb_fixed'] = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
-            ]]></add>
-        </operation>
-		<operation  info="no image">
-            <search position="replace"><![CDATA[
-             $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
-			]]></search>
-            <add><![CDATA[
-				$data['thumb'] = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
-            ]]></add>
-        </operation>
+      <operation  info="modification in manufacturer model">
+        <search position="replace"><![CDATA[
+           $data['thumb_fixed'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'));
+        ]]></search>
+        <add><![CDATA[
+          $data['thumb_fixed'] = "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
+        ]]></add>
+      </operation>
+      
+      <operation  info="no image">
+        <search position="replace"><![CDATA[
+         $data['thumb'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
+  ]]></search>
+        <add><![CDATA[
+    $data['thumb'] = "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image'];
+        ]]></add>
+      </operation>
 		
-		<operation  info="no image">
-            <search position="replace"><![CDATA[
-            $image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
-			]]></search>
-            <add><![CDATA[
-				$image = "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image'];
-            ]]></add>
-        </operation>
-		 
-		 
-		
+      <operation  info="no image">
+        <search position="replace"><![CDATA[
+          $image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'));
+        ]]></search>
+        <add><![CDATA[
+          $image = "https://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image'];
+        ]]></add>
+      </operation>
 	</file>
+    
 	 <file name="catalog/controller/journal2/search.php">
-        <operation  info="modification in manufacturer model">
-            <search position="replace"><![CDATA[
-				 $image = Journal2Utils::resizeImage($this->model_tool_image, $result['image'], $image_width, $image_height, $image_type);
-			 ]]></search>
-            <add><![CDATA[
-				$image = "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/mini_'.$result['image'];
-            ]]></add>
-        </operation>
-		 <operation  info="modification in manufacturer model">
-            <search position="replace"><![CDATA[
-				 $image = null;
-			 ]]></search>
-            <add><![CDATA[
-				$image =    "http://hifiprofile.net/thumb_no-image.png"  ;
-            ]]></add>
-        </operation>
-		 
-		
-		 
+      <operation  info="modification in manufacturer model">
+        <search position="replace"><![CDATA[
+          $image = Journal2Utils::resizeImage($this->model_tool_image, $result['image'], $image_width, $image_height, $image_type);
+        ]]></search>
+        <add><![CDATA[
+          $image = "https://hifiprofile.net/files/Products/image/".$result['product_id'].'/mini_'.$result['image'];
+        ]]></add>
+      </operation>
+      
+      <operation  info="modification in manufacturer model">
+          <search position="replace"><![CDATA[
+            $image = null;
+          ]]></search>
+          <add><![CDATA[
+            $image = "https://hifiprofile.net/thumb_no-image.png"  ;
+          ]]></add>
+      </operation>
 	</file>
   
   <file name="catalog/controller/module/journal2_side_products.php">
         <operation  info="side navigation product">
-            <search position="replace"><![CDATA[
-				$image = Journal2Utils::resizeImage($this->model_tool_image, $product['image'] ? $product['image'] : 'data/journal2/no_image_large.jpg', $this->data['image_width'], $this->data['image_height'], $this->data['image_resize_type']);
-			 ]]></search>
-            <add><![CDATA[
-				if(empty($product['image'])){
-				    $image = "http://hifiprofile.net/mini_thumb_no-image.png";
-				}else{
-				$image_url = 		"http://hifiprofile.net/files/Products/image/".$product['product_id'].'/mini_'.$product['image'];
-				$header_response = get_headers($image_url, 1);
-				if ( strpos( $header_response[0], "404" ) !== false ){
-				    $image = "http://hifiprofile.net/mini_thumb_no-image.png";
-				} 
-				else{
-				    $image = 		"http://hifiprofile.net/files/Products/image/".$product['product_id'].'/mini_'.$product['image'];
-				}
-				}
-            ]]></add>
-        </operation>
-		 
-		 
-		
-		 
-	</file>
-	<!--Added by yamini-->		
+          <search position="replace"><![CDATA[
+            $image = Journal2Utils::resizeImage($this->model_tool_image, $product['image'] ? $product['image'] : 'data/journal2/no_image_large.jpg', $this->data['image_width'], $this->data['image_height'], $this->data['image_resize_type']);
+          ]]></search>
+          <add><![CDATA[
+            if(empty($product['image'])){
+              $image = "https://hifiprofile.net/mini_thumb_no-image.png";
+            }else{
+              $image_url = 		"https://hifiprofile.net/files/Products/image/".$product['product_id'].'/mini_'.$product['image'];
+              $header_response = get_headers($image_url, 1);
+              if ( strpos( $header_response[0], "404" ) !== false ){
+                $image = "https://hifiprofile.net/mini_thumb_no-image.png";
+              }else{
+                $image = 	"https://hifiprofile.net/files/Products/image/".$product['product_id'].'/mini_'.$product['image'];
+              }
+            }
+          ]]></add>
+      </operation>
+    </file>
+  
     <file name="catalog/controller/module/journal2_custom_sections.php">
-        <operation  info="latest bottom product">
-            <search position="replace"><![CDATA[
-				$image = Journal2Utils::resizeImage($this->model_tool_image, $product['image'] ? $product['image'] : 'data/journal2/no_image_large.jpg', $this->data['image_width'], $this->data['image_height'], $this->data['image_resize_type']);
-			 ]]></search>
-            <add><![CDATA[
-				if(empty($product['image'])){
-				    $image = "http://hifiprofile.net/thumb_no-image.png";
-				}else{
-					$image = "http://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
-				}
-            ]]></add>
-        </operation>	 
-	</file>
-	<!--Added by yamini-->
+      <operation  info="latest bottom product">
+        <search position="replace"><![CDATA[
+          $image = Journal2Utils::resizeImage($this->model_tool_image, $product['image'] ? $product['image'] : 'data/journal2/no_image_large.jpg', $this->data['image_width'], $this->data['image_height'], $this->data['image_resize_type']);
+   ]]></search>
+        <add><![CDATA[
+            if(empty($product['image'])){
+                $image = "https://hifiprofile.net/thumb_no-image.png";
+            }else{
+              $image = "https://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
+            }
+        ]]></add>
+      </operation>	 
+    </file>
 	
 	  <file name="catalog/controller/journal2/menu.php">
         <operation  info="side navigation product">
-            <search position="replace"><![CDATA[
-			'image' => Journal2Utils::resizeImage($this->model_tool_image, $product, $image_width, $image_height, $image_resize_type),
-			 ]]></search>
-            <add><![CDATA[
-				'image' => "http://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'],
-            ]]></add>
+          <search position="replace"><![CDATA[
+    'image' => Journal2Utils::resizeImage($this->model_tool_image, $product, $image_width, $image_height, $image_resize_type),
+     ]]></search>
+          <add><![CDATA[
+      'image' => "https://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'],
+          ]]></add>
         </operation>
-		 <operation  info="side navigation product">
-            <search position="replace"><![CDATA[
-			'dummy' => Journal2Utils::resizeImage($this->model_tool_image, 'data/journal2/transparent.png', $image_width, $image_height, 'fit'),
-			 ]]></search>
-            <add><![CDATA[
-				'dummy' => "http://hifiprofile.net/thumb_no-image.png",
-            ]]></add>
+        
+        <operation  info="side navigation product">
+          <search position="replace"><![CDATA[
+    'dummy' => Journal2Utils::resizeImage($this->model_tool_image, 'data/journal2/transparent.png', $image_width, $image_height, 'fit'),
+     ]]></search>
+          <add><![CDATA[
+      'dummy' => "https://hifiprofile.net/thumb_no-image.png",
+          ]]></add>
         </operation>
-	</file>
+    </file>
 	  
 	  <file name="/catalog/model/journal2/checkout.php">
-        <operation  info="side navigation product">
-            <search position="replace"><![CDATA[
-			$image = $this->model_tool_image->resize($product['image'], $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
-			 ]]></search>
-            <add><![CDATA[
-			$image = "http://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
-				   ]]></add>
-        </operation>
-		<operation  info="side navigation product">
-            <search position="replace"><![CDATA[
-			$image = $this->model_tool_image->resize('no_image.png', $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
-			 ]]></search>
-            <add><![CDATA[
-			$image = "http://hifiprofile.net/thumb_no-image.png";
-				   ]]></add>
-        </operation>
-		 
-	</file> 
-	<!--Added by yamini-->
+      <operation  info="side navigation product">
+      <search position="replace"><![CDATA[
+        $image = $this->model_tool_image->resize($product['image'], $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
+      ]]></search>
+      <add><![CDATA[
+        $image = "https://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
+      ]]></add>
+      </operation>
+      
+    <operation  info="side navigation product">
+      <search position="replace"><![CDATA[
+        $image = $this->model_tool_image->resize('no_image.png', $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
+      ]]></search>
+      <add><![CDATA[
+        $image = "https://hifiprofile.net/thumb_no-image.png";
+      ]]></add>
+    </operation>
+	</file>
+    
 	<file name="catalog/controller/module/journal2_carousel.php">
-        <operation  info="showing image of featured products">
+    <operation  info="showing image of featured products">
 			<search position="replace"><![CDATA[
 				$image = Journal2Utils::resizeImage($this->model_tool_image, $product['image'] ? $product['image'] : 'data/journal2/no_image_large.jpg', $this->data['image_width'], $this->data['image_height'], $this->data['image_resize_type']);
 				]]>
 			</search>
 			<add><![CDATA[
 				if(empty($product['image'])){
-				   $image = "http://hifiprofile.net/thumb_no-image.png";
+				   $image = "https://hifiprofile.net/thumb_no-image.png";
 				}else{
-					$image = "http://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
+					$image = "https://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
 				}
 			]]></add>
 		</operation>
 	</file>
 	
 	<file name="catalog/controller/module/journal2_super_filter.php">
-        <operation  info="showing images of filtered search products">
-			<search position="replace"><![CDATA[
-				$image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
-				]]>
-			</search>
-			<add><![CDATA[
-				$image = "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image'];
-			]]></add>
-		</operation>
+    <operation  info="showing images of filtered search products">
+      <search position="replace"><![CDATA[
+        $image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+        ]]>
+      </search>
+      <add><![CDATA[
+        $image = "https://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image'];
+      ]]></add>
+    </operation>
+    
 		<operation  info="showing images of filtered search products">
 			<search position="replace"><![CDATA[
 				$image = $this->model_tool_image->resize(version_compare(VERSION, '2', '>=') ? 'placeholder.png' : 'no_image.jpg', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				]]>
 			</search>
 			<add><![CDATA[
-				$image = "http://hifiprofile.net/thumb_no-image.png";
+				$image = "https://hifiprofile.net/thumb_no-image.png";
 			]]></add>
 		</operation>
-	</file> 
-	<!--Added by yamini-->		
-	 
-			 
+	</file>
 </modification>

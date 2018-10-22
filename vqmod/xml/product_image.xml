@@ -11,7 +11,7 @@
              $image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
             ]]></search>
             <add><![CDATA[
-				$image = "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image'];
+				$image = "https://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image'];
             ]]></add>
         </operation>
 		<operation  info="no image">
@@ -19,31 +19,24 @@
              $image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
             ]]></search>
             <add><![CDATA[
-				$image = "http://hifiprofile.net/thumb_no-image.png";
+				$image = "https://hifiprofile.net/thumb_no-image.png";
             ]]></add>
         </operation>
-		
 	</file>
-	
-	 
-	 
 	 
     <file name="/catalog/controller/checkout/cart.php">
         <operation  info="modification in manufacturer model">
-				<search position="replace"><![CDATA[
-					$image = $this->model_tool_image->resize($product['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_cart_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_cart_height'));
-				]]></search>
-				 <add><![CDATA[
-				 if(empty($product['image'])){
-				    $image = "http://hifiprofile.net/thumb_no-image.png";
-				}else{
-				$image = 		"http://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
-				}
-			 
-				 
-				]]></add>
-			</operation>
-		
+            <search position="replace"><![CDATA[
+                $image = $this->model_tool_image->resize($product['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_cart_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_cart_height'));
+            ]]></search>
+            <add><![CDATA[
+                if(empty($product['image'])){
+                    $image = "https://hifiprofile.net/thumb_no-image.png";
+                }else{
+                    $image = "https://hifiprofile.net/files/Products/image/".$product['product_id'].'/vga_'.$product['image'];
+                }
+            ]]></add>
+		</operation>
 	</file>
 	
 	
@@ -53,7 +46,7 @@
 				$image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
 			]]></search>
             <add><![CDATA[
-				$image =    "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
+				$image =    "https://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
 			]]></add>
         </operation>
 		
@@ -62,7 +55,7 @@
 					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
 				]]></search>
 				 <add><![CDATA[
-					$image = "http://hifiprofile.net/thumb_no-image.png";
+					$image = "https://hifiprofile.net/thumb_no-image.png";
 				 
 				]]></add>
 			</operation>
@@ -75,7 +68,7 @@
 				 $image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
 			]]></search>
             <add><![CDATA[
-			  $image =    "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
+			  $image =    "https://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
 			 
 				 
 			]]></add>
@@ -85,7 +78,7 @@
 				$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
 			]]></search>
             <add><![CDATA[
-			  $image =  "http://hifiprofile.net/thumb_no-image.png"  ;
+			  $image =  "https://hifiprofile.net/thumb_no-image.png"  ;
 			]]></add>
         </operation>
 		
@@ -96,7 +89,7 @@
 				$image = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_wishlist_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_wishlist_height'));
 			]]></search>
             <add><![CDATA[
-				$image =    "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+				$image =    "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
 			]]></add>
         </operation>
 		
@@ -105,7 +98,7 @@
 					$image = false;
 				]]></search>
 				 <add><![CDATA[
-					$image = "http://hifiprofile.net/thumb_no-image.png";
+					$image = "https://hifiprofile.net/thumb_no-image.png";
 				 
 				]]></add>
 			</operation>
@@ -117,7 +110,7 @@
 				$image = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_compare_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_compare_height'));
 			]]></search>
             <add><![CDATA[
-				$image = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+				$image = "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
 			]]></add>
         </operation>
 		
@@ -126,7 +119,7 @@
 					$image = false;
 				]]></search>
 				 <add><![CDATA[
-					$image = "http://hifiprofile.net/thumb_no-image.png";
+					$image = "https://hifiprofile.net/thumb_no-image.png";
 				 
 				]]></add>
 			</operation>
@@ -138,7 +131,7 @@
 				$image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
 			]]></search>
             <add><![CDATA[
-				$image = "http://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
+				$image = "https://hifiprofile.net/files/Products/image/".$result['product_id'].'/vga_'.$result['image']  ;
 			]]></add>
         </operation>
 		  <operation  info="no image">
@@ -147,7 +140,7 @@
 			
 			]]></search>
             <add><![CDATA[
-				 $image =    "http://hifiprofile.net/thumb_no-image.png"  ;
+				 $image =    "https://hifiprofile.net/thumb_no-image.png"  ;
 			]]></add>
         </operation>
 		
@@ -161,7 +154,7 @@
 				$image = $this->model_tool_image->resize($product_info['image'], $setting['width'], $setting['height']);
 			]]></search>
             <add><![CDATA[
-			$image = "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+			$image = "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
 			]]></add>
         </operation>
 		
@@ -170,7 +163,7 @@
 			$image = $this->model_tool_image->resize('placeholder.png', $setting['width'], $setting['height']);
 			]]></search>
             <add><![CDATA[
-				 $image =    "http://hifiprofile.net/thumb_no-image.png"  ;
+				 $image =    "https://hifiprofile.net/thumb_no-image.png"  ;
 			]]></add>
         </operation>
 		
@@ -184,7 +177,7 @@
 			]]></search>
             <add><![CDATA[
 			
-				$data['thumb'] = "http://hifiprofile.net/files/Products/image/".$product_info['product_id']."/vga_".$product_info['image'];
+				$data['thumb'] = "https://hifiprofile.net/files/Products/image/".$product_info['product_id']."/vga_".$product_info['image'];
 			]]></add>
         </operation>
 		
@@ -193,7 +186,7 @@
 				$data['popup'] = $this->model_tool_image->resize($product_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_popup_height'));
 			]]></search>
             <add><![CDATA[
-				 $data['popup'] =  "http://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
+				 $data['popup'] =  "https://hifiprofile.net/files/Products/image/".$product_info['product_id'].'/vga_'.$product_info['image']  ;
 			]]></add>
         </operation>
 		  <operation  info="no image">
@@ -201,7 +194,7 @@
 				$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_related_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_related_height'));
 			]]></search>
             <add><![CDATA[
-				$image =  "http://hifiprofile.net/thumb_no-image.png"  ;
+				$image =  "https://hifiprofile.net/thumb_no-image.png"  ;
 			 
 			]]></add>
         </operation>
@@ -210,10 +203,9 @@
 				$data['thumb'] = '';
 			]]></search>
             <add><![CDATA[
-				$data['thumb'] =  "http://hifiprofile.net/thumb_no-image.png"  ;
+				$data['thumb'] =  "https://hifiprofile.net/thumb_no-image.png"  ;
 			 
 			]]></add>
         </operation> -->
 	</file>
-	 
 </modification>
